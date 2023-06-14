@@ -2,8 +2,10 @@
 
 function palindrome(str){
 
+	var s = str.toLowerCase();
+
 	for(let i=0, j=str.length-1; i<j; i++,j--){
-		if(str[i] !== str[j])
+		if(s[i] != s[j])
 			return false;
 	}
 
